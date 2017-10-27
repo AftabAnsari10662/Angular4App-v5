@@ -11,9 +11,10 @@
         </thead>
 
         <tr *ngFor="let movie of movies">
-            <td>{{ movie.title }}</td>
-            <td>{{ movie.releaseYear}}</td>
+            <td>{{movie.title}}</td>
+            <td>{{movie.releaseYear}}</td>
             <td>
+
                 <div class="btn-group">
                     <button class="btn-btn-default">
                         <span class="glyphicon glyphicon-pencil"></span>
@@ -25,7 +26,6 @@
                         <span class="glyphicon glyphicon-remove"></span>
                     </button>
                 </div>
-
             </td>
         </tr>
     </table>

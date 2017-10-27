@@ -1,6 +1,5 @@
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 import { NgModule } from "@angular/core";
-import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 
@@ -40,5 +39,3 @@ import { MovieData } from "./movie.data";
   bootstrap: [AppComponent]
 })
 export class AppModule {}
-
-platformBrowserDynamic().bootstrapModule(AppModule);
