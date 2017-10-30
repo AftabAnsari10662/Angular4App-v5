@@ -1,0 +1,32 @@
+[
+  {
+    "movieId": "123",
+    "releaseYear":1987,
+    "title": "ABC",
+    "rating": 5
+  },
+  {
+    "movieId": "124",
+    "releaseYear":1987,
+    "title": "ABC2",
+    "rating": 4
+  },
+  {
+    "movieId": "125",
+    "releaseYear":1987,
+    "title": "ABC3",
+    "rating": 3
+  },
+  {
+    "movieId": "126",
+    "title": "ABC4",
+    "releaseYear":1987,
+    "rating": 5
+  },
+  {
+    "movieId": "127",
+    "title": "ABC5",
+    "releaseYear":1987,
+    "rating": 4
+  }
+]

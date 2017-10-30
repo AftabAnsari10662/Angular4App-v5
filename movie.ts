@@ -1,9 +1,10 @@
 export class Movie{
 
     constructor(
-        movieId:number,
-        title:string,
-        releaseYear:number
+        public movieId:number,
+        public title:string,
+        public releaseYear:number,
+        public rating:number
     ){
 
     }

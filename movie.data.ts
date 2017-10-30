@@ -6,6 +6,7 @@ export class MovieData {
   constructor(private http: HttpClient) {}
 
   getAllMovies() {
-    return this.http.get("http://moviestorecore.azurewebsites.net/api/movies");
+    // return this.http.get("http://moviestorecore.azurewebsites.net/api/movies");
+    return this.http.get("movies.json");
   }
 }

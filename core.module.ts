@@ -8,6 +8,7 @@ import { MovieList } from "./movie-list.component";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterModule } from "@angular/router";
 import { MovieData } from "./movie.data";
+import { MovieRatingComponent } from "./movie-rating.component";
 @NgModule({
   imports: [
     BrowserModule,
@@ -34,7 +35,7 @@ import { MovieData } from "./movie.data";
       }
     )
   ],
-  declarations: [SimpleComponent, MovieList, AppComponent],
+  declarations: [SimpleComponent, MovieList, AppComponent, MovieRatingComponent],
   providers: [MovieData],
   bootstrap: [AppComponent]
 })
