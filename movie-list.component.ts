@@ -16,4 +16,12 @@ export class MovieList {
       .getAllMovies()
       .subscribe((movies: Movie[]) => (this.movies = movies));
   }
+
+  upRating(movie: Movie) {
+    movie.rating += 1;
+  }
+
+  downRating(movie: Movie) {
+    movie.rating -= 1;
+  }
 }
