@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
 import { Movie } from "./movie";
 
 @Component({
@@ -7,13 +7,14 @@ import { Movie } from "./movie";
 })
 export class MovieRatingComponent implements OnInit {
   @Input() movie: Movie;
+
   entries: string[] = [];
   constructor() {}
 
   ngOnInit() {
     for (let i = 0; i < 5; i++) {
       if (i < this.movie.rating) {
-        this.entries.push("glyphicon-star");
+        this.entries.push("glyphicon-star text-success");
       } else {
         this.entries.push("glyphicon-star-empty");
       }
