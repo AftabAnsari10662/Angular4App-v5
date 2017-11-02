@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { MovieData } from "./movie.data";
 import { Injectable, Component } from "@angular/core";
 import { Movie } from "./movie";
@@ -9,7 +10,10 @@ import { Movie } from "./movie";
 })
 export class MovieList {
   movies: Movie[];
-  constructor(private movieData: MovieData) {}
+  constructor(
+    private movieData: MovieData,
+    private router:Router
+  ) {}
 
   ngOnInit() {
     this.movieData
@@ -23,5 +27,9 @@ export class MovieList {
 
   downRating(movie: Movie) {
     movie.rating -= 1;
+  }
+
+  details(movie:Movie){
+    this.router.navigate([`movies/details/${movie.movieId}`]);
   }
 }

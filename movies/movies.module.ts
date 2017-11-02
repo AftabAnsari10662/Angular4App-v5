@@ -1,3 +1,5 @@
+import { MovieNew } from "./movie-new.component";
+import { MovieDetails } from "./movie-details.component";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
@@ -16,6 +18,14 @@ import { MovieList } from "./movie-list.component";
         {
           path: "list",
           component: MovieList
+        },
+        {
+          path: "movies/details/:id",
+          component: MovieDetails
+        },
+        {
+          path: "movies/new",
+          component: MovieNew
         }
       ],
       {
@@ -23,7 +33,7 @@ import { MovieList } from "./movie-list.component";
       }
     )
   ],
-  declarations: [MovieList, MovieRatingComponent],
+  declarations: [MovieList, MovieRatingComponent, MovieDetails, MovieNew],
   providers: [MovieData]
 })
 export class MovieModule {}

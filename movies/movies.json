@@ -21,12 +21,12 @@
     "movieId": "126",
     "title": "ABC4",
     "releaseYear":1987,
-    "rating": 5
+    "rating": 2
   },
   {
     "movieId": "127",
     "title": "ABC5",
     "releaseYear":1987,
-    "rating": 4
+    "rating": 1
   }
 ]
