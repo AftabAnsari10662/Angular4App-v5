@@ -7,6 +7,6 @@ export class MovieData {
 
   getAllMovies() {
     // return this.http.get("http://moviestorecore.azurewebsites.net/api/movies");
-    return this.http.get("movies.json");
+    return this.http.get("./movies/movies.json");
   }
 }

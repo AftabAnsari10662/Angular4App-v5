@@ -1,22 +1,21 @@
-import { MovieModule } from "./movies/movies.module";
-import { AppComponent } from "./app.component";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
-import { SimpleComponent } from "./simple.component";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterModule } from "@angular/router";
+import { MovieData } from "./movie.data";
+import { MovieRatingComponent } from "./movie-rating.component";
+import { MovieList } from "./movie-list.component";
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    MovieModule,
     RouterModule.forRoot(
       [
         {
-          path: "simple",
-          component: SimpleComponent
+          path: "list",
+          component: MovieList
         }
       ],
       {
@@ -24,8 +23,7 @@ import { RouterModule } from "@angular/router";
       }
     )
   ],
-  declarations: [SimpleComponent, AppComponent],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [MovieList, MovieRatingComponent],
+  providers: [MovieData]
 })
-export class AppModule {}
+export class MovieModule {}

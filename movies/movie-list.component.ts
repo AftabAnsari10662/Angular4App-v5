@@ -5,7 +5,7 @@ import { Movie } from "./movie";
 @Injectable()
 @Component({
   selector: "movie-list",
-  templateUrl: "./movie-list.component.html"
+  templateUrl: "./movies/movie-list.component.html"
 })
 export class MovieList {
   movies: Movie[];

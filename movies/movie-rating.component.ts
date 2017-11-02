@@ -3,7 +3,7 @@ import { Movie } from "./movie";
 
 @Component({
   selector: "movie-rating",
-  templateUrl: "./movie-rating.component.html"
+  templateUrl: "./movies/movie-rating.component.html"
 })
 export class MovieRatingComponent implements OnInit {
   @Input() movie: Movie;
